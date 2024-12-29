@@ -1,0 +1,25 @@
+{
+	"deployment": {
+		"name": "canvaforcliq",
+		"stack": "java17",
+		"type": "integration",
+		"env_variables": {},
+		"integration_config": [
+			{
+				"service": "ZohoCliq",
+				"handlers": {
+					"bot_handler": "com.handlers.BotHandler",
+					"command_handler": "com.handlers.CommandHandler",
+					"messageaction_handler": "com.handlers.MessageActionHandler",
+					"widget_handler": "com.handlers.WidgetHandler",
+					"function_handler": "com.handlers.FunctionHandler",
+					"installation_handler": "com.handlers.InstallationHandler",
+					"installation_validator": "com.handlers.InstallationValidator"
+				}
+			}
+		]
+	},
+	"execution": {
+		"main": "CanvaForCliq"
+	}
+}
